@@ -17,6 +17,10 @@ This script performs multiple choice question answering using a pre-trained lang
 - `--data_dir DATA_DIR`, `-d DATA_DIR`: Directory containing the MMLU data files (default: "data").
 - `--save_dir SAVE_DIR`, `-s SAVE_DIR`: Directory to save the results (default: "results").
 - `--model MODEL`, `-m MODEL`: Name or path of the pre-trained model to use (default: "mistralai/Mistral-7B-v0.1").
+- `--quantization {none,8bit,4bit}`, `-q {none,8bit,4bit}`: Quantization type (default: "none").
+  - `none`: No quantization (default).
+  - `8bit`: 8-bit quantization.
+  - `4bit`: 4-bit quantization.
 
 ### Example
 
