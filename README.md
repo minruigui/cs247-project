@@ -20,11 +20,7 @@ This script performs multiple choice question answering using a pre-trained lang
 
 ### Example
 
-This command runs the script with the following settings:
-- Number of training examples: 10
-- Data directory: "data"
-- Save directory: "results"
-- Pre-trained model: "mistralai/Mistral-7B-v0.1"
+`python evaluate.py --ntrain 5 --data_dir data --save_dir results --model mistralai/Mistral-7B-v0.1`
 
 ## Data Format
 
