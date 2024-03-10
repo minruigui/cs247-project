@@ -4,9 +4,8 @@ import numpy as np
 import pandas as pd
 from bitsandbytes.nn import Int8Params
 choices = ["A", "B", "C", "D"]
-from transformers import AutoModelForCausalLM, AutoTokenizer
-
-
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+import torch
 
 # prompt = "My favourite condiment is"
 
@@ -48,8 +47,19 @@ def gen_prompt(train_df, subject, k=-1):
     for i in range(k):
         prompt += format_example(train_df, i)
     return prompt
+
+def gen_training_prompt(dataset, subject, k=-1):
+    df = pandas.DataFrame(dataset)
+    prompt = "The following are multiple choice questions (with answers) about {}.\n\n".format(format_subject(subject))
+    if k == -1:
+        k = df.shape[0]
+    for i in range(k):
+        prompt += format_example(df, i)
+    return prompt
+    
 BACH_SIZE = 1
 tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-v0.1", special_tokens_map={})
+
 def load_quantized_model(model_name, quantization):
     if quantization == "none":
         model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
@@ -58,6 +68,19 @@ def load_quantized_model(model_name, quantization):
     elif quantization == "4bit":
         model = AutoModelForCausalLM.from_pretrained(model_name, load_in_4bit=True, device_map="auto")
         os.environ["BNB_4BIT_COMPUTE_DTYPE"] = "float16"
+    elif quantization == "qlora":
+        bnb_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.bfloat16,
+        bnb_4bit_use_double_quant=True
+        )
+        model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=bnb_config, device_map="auto")
+        tokenizer = AutoTokenizer.from_pretrained(
+                model_name,
+                model_max_length=512,
+                padding_side="left",
+                add_eos_token=True)
     return model
 def eval(args,model, subject, dev_df, test_df):
     
@@ -86,6 +109,7 @@ def eval(args,model, subject, dev_df, test_df):
         label = test_df.iloc[i, test_df.shape[1]-1]
         prompts.append(prompt)
         labels.append(label)
+
         if len(prompts) == BACH_SIZE:
             model_inputs = tokenizer(prompts, return_tensors="pt").to("cuda")
             generated_ids = model.generate(**model_inputs, max_new_tokens=1, do_sample=False, pad_token_id=tokenizer.eos_token_id)
@@ -94,13 +118,14 @@ def eval(args,model, subject, dev_df, test_df):
                 cors.append(c==l)
             prompts=[]
             labels=[]
+        
     if len(prompts)>0:
         model_inputs = tokenizer(prompts, return_tensors="pt").to("cuda")
         generated_ids = model.generate(**model_inputs, max_new_tokens=1, do_sample=False, pad_token_id=tokenizer.eos_token_id)
         cs=tokenizer.batch_decode(generated_ids[:,-1])
         for c,l in zip(cs,labels):
             cors.append(c==l)
-
+    
     acc = np.mean(cors)
     cors = np.array(cors)
 
@@ -109,6 +134,7 @@ def eval(args,model, subject, dev_df, test_df):
     return cors, acc
 
 def main(args):
+    print(os.listdir(os.path.join(args.data_dir, "test")))
     subjects = sorted([f.split("_test.csv")[0] for f in os.listdir(os.path.join(args.data_dir, "test")) if "_test.csv" in f])
     if not os.path.exists(args.save_dir):
         os.mkdir(args.save_dir)
@@ -137,7 +163,7 @@ if __name__ == "__main__":
     parser.add_argument("--data_dir", "-d", type=str, default="data")
     parser.add_argument("--save_dir", "-s", type=str, default="results")
     parser.add_argument("--model", "-m", type=str, default="mistralai/Mistral-7B-v0.1")
-    parser.add_argument("--quantization", "-q", type=str, default="none", choices=["none", "8bit", "4bit"], help="Quantization type")
+    parser.add_argument("--quantization", "-q", type=str, default="none", choices=["none", "8bit", "4bit", "qlora"], help="Quantization type")
     args = parser.parse_args()
     main(args)
 
