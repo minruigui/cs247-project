@@ -42,7 +42,7 @@
 "Why are some specific indices of iron status (such as serum ferritin or transferrin receptors) generally considered to be more reliable indices of iron status, than blood haemoglobin levels are?
 ",Because they respond more rapidly to changes in iron levels in the diet.,"Because blood haemoglobin levels can also respond to a variety of other factors and insults, such as lead poisoning, chronic disease, etc.",Because the specific iron indices can be measured more accurately and easily.,"Because haemoglobin levels vary with subject age, and between the sexes.",B,True
 "What stable isotope is commonly given for the measurement of total body water?
-",Deuterium,Carbon 13,Nitrogen 15,Oxygen 18,A,True
+",Deuterium,Carbon 13,Nitrogen 15,Oxygen 18,A,False
 "What are focus areas of nutritional epidemiology?
 ",The role of nutritional factors in causing disease in a population.,How changes in food intake in the population can promote good health.,Both of the options given are correct.,None of the options given is correct.,C,True
 "Which of the following diet-derived compounds have epigenetic effects?
@@ -95,7 +95,7 @@ There is increasing concern about the importance of adequate nutrition in the pr
 "Intestinal lactase deficiency leads to lactose maldigestion which subsequently can lead to lactose intolerance, i.e. causing clinical symptoms. Infants and children normally express sufficient lactase levels as not to experience clinical symptoms. Overall, adults can be classified as lactase-persisters or lactase non-persisters. What is the approximate percentage of Lactase non-persisters worldwide?
 ",45%-50%,70%-75 %,10%-15%,30%-35%,B,False
 "Which of the following vitamins provides the coenzyme for carboxylation reactions?
-",Biotin,Niacin,Riboflavin,Thiamin,A,True
+",Biotin,Niacin,Riboflavin,Thiamin,A,False
 "According to trials on diabetes prevention, high-risk individuals can reduce their risk to develop diabetes by doing the following:
 ",Eating a very low carbohydrate diet,Consuming a diet high in monounsaturated fats,Losing 5-7% of body weight through a hypocaloric low fat diet and 30 minutes of daily activity,Initiating metformin 850 mg BID and practicing daily vigorous exercise,C,True
 "IBS
@@ -123,7 +123,7 @@ There is increasing concern about the importance of adequate nutrition in the pr
 "Infants and children with a suspected food allergy e.g. cow's milk allergy/intolerance could display the following symptoms and signs:
 ",severe atopic dermatitis,enterocolitis,diarrhoea,all of the above,D,True
 "High intake of which of these dietary components predisposes to accelerated cognitive decline
-",High glycaemic index carbohydrates,A high n-6:n-3 fat ratio,Long chain saturated fats,All of the above,D,True
+",High glycaemic index carbohydrates,A high n-6:n-3 fat ratio,Long chain saturated fats,All of the above,D,False
 "Which of the following statements is/are true?
 How can smoking affect breastfeeding?
 ",Suppresses milk production,Alters the composition of breast milk,Increases the risk of early cessation of breastfeeding,all of the options given are correct,D,True
@@ -158,7 +158,7 @@ How can smoking affect breastfeeding?
 "Which of the following statements is correct?
 ",Mycotoxins contaminate foods containing bacteria formed during storage under dry conditions,Mycotoxins contaminate foods containing fungi formed during storage under dry conditions,Mycotoxins contaminate foods containing bacteria formed during storage under moist conditions,Mycotoxins contaminate foods containing fungi formed during storage under moist conditions,D,True
 "Which of the following is true about dietary calcium:
-",Typical calcium intake in most adults is between 0.5mg and 2.0mg per day,Activated Vitamin D decreases absorption of dietary calcium,There is clear evidence that people who consume more than the average amount of calcium have a lower risk of bone fractures.,"Absorption efficiency is inversely related to calcium intake, so that a higher proportion is absorbed when calcium intake is low",D,True
+",Typical calcium intake in most adults is between 0.5mg and 2.0mg per day,Activated Vitamin D decreases absorption of dietary calcium,There is clear evidence that people who consume more than the average amount of calcium have a lower risk of bone fractures.,"Absorption efficiency is inversely related to calcium intake, so that a higher proportion is absorbed when calcium intake is low",D,False
 "Oral bacterial synthesise extracellular glucans (dextran and mutan) from which host dietary component?
 ",glucose,Alpha limit dextrins,Sucrose,polysaccharides,C,True
 "What is the definition of overweight?
@@ -166,7 +166,7 @@ How can smoking affect breastfeeding?
 "Pregnancy and lactation is known to:
 ",Decrease calcium requirements,Result in bone mineral loss from the skeleton,Decrease the rate of dietary calcium absorption,Affect bone mineral content later in life,B,False
 "Observational epidemiology studies have produced useful in identifying health effects of many food contaminants, but not for assessing risk, because:
-",It is never possible to know whether observed effects are caused by the contaminant,Human exposure though food is usually much less than exposures that have been studied,Controlled animal studies provide more reliable information,Reliable dose-response data are difficult to acquire and often unavailable,D,True
+",It is never possible to know whether observed effects are caused by the contaminant,Human exposure though food is usually much less than exposures that have been studied,Controlled animal studies provide more reliable information,Reliable dose-response data are difficult to acquire and often unavailable,D,False
 "It is correct to state that for the treatment of Bulimia Nervosa:
 ",Fluoxetine is considered of benefit,The first approach is to discuss body image,It is not useful to discuss weight with patients,Treatments should target exclusively on purging practices,A,True
 "The respiration quotient (RQ):
@@ -174,7 +174,7 @@ How can smoking affect breastfeeding?
 "Nitrites are added to processed meats mainly to prevent the growth of the following genus of microorganisms
 ",salmonella,clostridium,listeria,campylobacter,B,True
 "At what stage(s) during pregnancy did in utero exposure to the Dutch Hunger Winter have the biggest effects on DNA methylation in blood cells from the adult offspring?
-",First trimester of pregnancy.,Second trimester of pregnancy.,Third trimester of pregnancy.,Effects were similar at all stages of pregnancy.,A,False
+",First trimester of pregnancy.,Second trimester of pregnancy.,Third trimester of pregnancy.,Effects were similar at all stages of pregnancy.,A,True
 "The body's adjustment of heat production to changes in the plane of nutrition (under- or over-nutrition) and to minimize energy imbalance is known as:
 ",Basal metabolic rate,Thermic effect of food,Adaptive thermogenesis,Thermal balance,C,True
 "Which drug(s) is/are approved for the treatment of obesity in Europe?
@@ -218,7 +218,7 @@ How can smoking affect breastfeeding?
 "Which statement about absorption from the gastro-intestinal (GI) tract is most correct?
 ",The absorption of glucose is associated with sodium uptake.,Fructose is absorbed more rapidly than glucose.,Galactose and fructose are absorbed by the same transporter at the brush border membrane.,Most water absorption along the GI tract occurs in the colon.,A,True
 "Of the classes of dietary fatty acids which have the most beneficial effect on plasma LDL cholesterol levels?
-",n-3 and n-6 polyunsaturated fatty acids,Saturated and trans unsaturated fatty acids,Monounsaturated fatty acids,Both a and c,D,True
+",n-3 and n-6 polyunsaturated fatty acids,Saturated and trans unsaturated fatty acids,Monounsaturated fatty acids,Both a and c,D,False
 "Which of the following is not a function of vitamin D?
 ",Lipid-soluble antioxidant in cell membranes,Fast responses to increase calcium absorption with no change in gene expression,Regulation of differentiation of adipocytes,Regulation of bone turnover,A,True
 "How many kcal are there in one gram of ethanol?
@@ -228,7 +228,7 @@ How can smoking affect breastfeeding?
 "Which of the following amino acids cannot provide a substrate for gluconeogenesis?
 ",Leucine,Tryptophan,Histidine,isoleucine,A,False
 "What nutritional strategies will not improve performance during prolonged endurance type exercise?
-",Carbohydrate loading,Tapering,The classic glycogen loading regime,Exogenous carbohydrate ingestion during exercise,C,True
+",Carbohydrate loading,Tapering,The classic glycogen loading regime,Exogenous carbohydrate ingestion during exercise,C,False
 "Which body composition method would you use to measure body mineral content?
 ",Magnetic Resonance Imaging,Dual-energy X-ray absorptiometry,Isotope dilution,Skinfold Thickness,B,True
 "These factors increase risk of osteoporotic fracture:
@@ -246,7 +246,7 @@ How can smoking affect breastfeeding?
 "The colonic microflora can be considered as ""an organ within an organ"". Which of the following statements best describes the functions of the microbiota?
 ",Measurement of daily dietary fibre intake underestimates the amount of fermentable material entering the colon each day,All of the options given are correct,"Acetate, propionate and butyrate are the chief organic acids produced by anaerobic colic fermentation","The establishment of an ""acetate buffer"" in the colonic lumen suppresses the growth of some pathogenic bacteria.",B,False
 "Which of the following statements about glucose metabolism is correct?
-",Glucagon increases the rate of glycolysis,Glycolysis requires NADP+,"In glycolysis, glucose is cleaved into two three-carbon products",The end-product of glycolysis in red blood cells is pyruvate,C,True
+",Glucagon increases the rate of glycolysis,Glycolysis requires NADP+,"In glycolysis, glucose is cleaved into two three-carbon products",The end-product of glycolysis in red blood cells is pyruvate,C,False
 "What dietary component has been shown to improve hypertension in humans?
 ",potassium,sodium,polyunsaturated fatty acids,cholesterol,A,True
 "Fats normally contain triacylglycerols at concentrations of:
@@ -293,7 +293,7 @@ Impaired foetal growth is described as intrauterine growth retardation (IUGR). I
 "Which of the following statements about the digestibility of dietary proteins is correct?
 ",The digestibility of plant proteins is generally less good compared to animal proteins.,The digestibility of meat protein is less good compared with plant proteins.,Digestibility can only be measured at the terminal ileum,Digestibility can only be measured as faecal digestibility,A,True
 "Basal Metabolic Rate (BMR):
-",is measured in comfortable sitting position,is unaltered in hypothyroidism and hyperthyroidism,Is higher after weight gain because part of the excess weight is fat-free mass.,is not altered after weight loss.,C,True
+",is measured in comfortable sitting position,is unaltered in hypothyroidism and hyperthyroidism,Is higher after weight gain because part of the excess weight is fat-free mass.,is not altered after weight loss.,C,False
 "What is the best method to estimate changes in body fat during weight loss?
 ",BMI,DXA,Four-compartment model,MRI,C,False
 "Which of the following statements is correct?
@@ -315,15 +315,15 @@ Impaired foetal growth is described as intrauterine growth retardation (IUGR). I
 "What are histones?
 ",Lipids,Carbohydrates,Nucleotides,Proteins,D,True
 "Which of the following statements about methods of evaluating protein quality in human nutrition is correct?
-","The rat protein efficiency ratio assay, (PER), is a good method of assessing protein quality for human nutrition.","The rat net protein-utilisation assay, (NPU), is the best method of assessing protein quality for human nutrition.",Animal growth assays underestimate the quality of dietary proteins for human nutrition,The growing rat is a good model for assessing protein quality in human nutrition.,C,True
+","The rat protein efficiency ratio assay, (PER), is a good method of assessing protein quality for human nutrition.","The rat net protein-utilisation assay, (NPU), is the best method of assessing protein quality for human nutrition.",Animal growth assays underestimate the quality of dietary proteins for human nutrition,The growing rat is a good model for assessing protein quality in human nutrition.,C,False
 "Alcohol is a major risk factor for cancer development. Which alcohol metabolite plays a prominent role in cancer development?
 ",fatty acid ethyl esters (FAEE),acetate,acetaldehyde,alcohol,C,True
 "The body mass index (BMI) of vegetarians differs on average from meat-eaters by how much?
-",3 units of BMI,0.5 units of BMI,1 unit of BMI,2 units of BMI,C,True
+",3 units of BMI,0.5 units of BMI,1 unit of BMI,2 units of BMI,C,False
 "Which of the following statements about the diets and nutritional status of older people is correct?
 ",Reports suggest that older people consume less than the recommended contribution of fat to energy intake.,Multiple micronutrient deficiencies are widespread in older people in high-income countries.,Older people generally have a lower energy intake than younger adults.,There is little variation in the dietary intake between older people.,C,True
 "Cholesterol and fatty acids absorbed from the intestinal lumen are packaged into which types of lipoproteins and secreted from the enterocytes into the lymph?
-",Chylomicrons and HDL,Chylomicrons and VLDL,HDL and LDL,VLDL and HDL,A,False
+",Chylomicrons and HDL,Chylomicrons and VLDL,HDL and LDL,VLDL and HDL,A,True
 "Which of the following vitamins is involved in one-carbon metabolism?
 ",Folate,Riboflavin,Thiamin,Vitamin C,A,True
 "Which of the following is not a beneficial effect of exercise in people with diabetes:
@@ -347,7 +347,7 @@ Impaired foetal growth is described as intrauterine growth retardation (IUGR). I
 "What enzyme is responsible for copying methylation marks from the parental to the daughter strand of DNA during replication?
 ",DNMT1,DNMT3a,DNMT3b,DNMT3L,A,True
 "What is the worldwide prevalence of obesity?
-",11%,13%,15%,39%,B,True
+",11%,13%,15%,39%,B,False
 "Lactose
 ",Is always the cause of milk intolerance,Cannot be digested in the human gut,Intolerance is present in up to 20% of the population,Is excluded on a low FODMAP diet,D,False
 "How many stages within the food supply chain can food availability and consumption be measured?
@@ -365,7 +365,7 @@ Impaired foetal growth is described as intrauterine growth retardation (IUGR). I
 "Insulin deficiency is associated with
 ",Reduced lipolysis,Increased ketogenesis,Reduced gluconeogenesis,Reduced proteolysis,B,True
 "Which of the following vitamins provides the coenzyme for reduction reactions in fatty acid synthesis?
-",Folate,Niacin,Riboflavin,Vitamin B6,B,True
+",Folate,Niacin,Riboflavin,Vitamin B6,B,False
 "On an average daily basis, the gross energy intake of a healthy woman is 9279 kJ, the energy content of her faeces and urine are 647 kJ and 318 kJ, respectively. Her average daily digestible energy intake and metabolisable energy intake would be, respectively,:
 ",647 kJ and 318 kJ,9279-318 kJ and 9279-647 kJ,9279+318 kJ and 9279+647 kJ,9279-647 kJ and 9279-(647+318) kJ,D,True
 "When epidemiologists judge the evidence to establish possible causes of a health outcome, they consider
@@ -373,7 +373,7 @@ Impaired foetal growth is described as intrauterine growth retardation (IUGR). I
 "Women who are planning a pregnancy are recommended to take a supplement of 400ìg folic acid/ day before and until the end of the first trimester of pregnancy. What effect does such supplementation have on methylation of the imprinted gene IGF2 in the resulting children?
 ",No effect.,Methylation of IGF2 is increased.,Methylation of IGF2 is decreased.,The effect depends on whether the child is male or female.,B,False
 "Occasionally infants are born without a normally functioning immune system. What are the signs most suggestive of a severe combined immunodeficiency?
-",Recurrent severe infections,Family history of unexplained death in infancy,Generalised spread of the Tuberculosis strain BCG after vaccination,All of the options given are correct,D,True
+",Recurrent severe infections,Family history of unexplained death in infancy,Generalised spread of the Tuberculosis strain BCG after vaccination,All of the options given are correct,D,False
 "Fibre supplements
 ",May be helpful in diverticular disease,Are always easily fermented by colonic bacteria,Are usually derived from soluble fibre sources,Should be avoided in constipation,A,True
 "Which life-style factors do not confound the interpretation of the health of vegetarians compared with meat-eaters?
@@ -427,7 +427,7 @@ Impaired foetal growth is described as intrauterine growth retardation (IUGR). I
 "The UNICEF model of the causes of malnutrition identifies several levels of causes: immediate, underlying and basic. Which of the following is not one of the underlying causes in the UNICEF model?
 ",Insufficient rainfall for agriculture,Inadequate access to food,Inadequate care for mothers and children,Insufficient health services and unhealthy environment,A,True
 "Which statement about intestinal ""brakes"" and ""accelerators"" is FALSE?
-",Dietary starch is a potent stimulator of small intestinal motility because it causes insulin release from the pancreas,"Food in the stomach causes gastrin release, which stimulates acid secretion",Short-chain fatty acids which move from colon to caecum (reflux) promote ileo-caecal motility,"The arrival of lipid in the duodenum causes an immediate reduction in motility and a switch from the ""fasting"" to the ""feeding"" pattern.",A,True
+",Dietary starch is a potent stimulator of small intestinal motility because it causes insulin release from the pancreas,"Food in the stomach causes gastrin release, which stimulates acid secretion",Short-chain fatty acids which move from colon to caecum (reflux) promote ileo-caecal motility,"The arrival of lipid in the duodenum causes an immediate reduction in motility and a switch from the ""fasting"" to the ""feeding"" pattern.",A,False
 "What is meant by the term 'functional isolation'?
 ",A child that is only developing one single function at the time,A child that is isolated from proper nutrition and therefore not developing adequately,"A malnourished, apathetic child that is not receiving the same stimulation from the environment affecting his/her development negatively",None of the above,C,True
 "Which of the following proteins is not involved in the absorption of cholesterol in the small intestine?
@@ -443,7 +443,7 @@ Impaired foetal growth is described as intrauterine growth retardation (IUGR). I
 "The WHO made a strong recommendation that the maximum intake of free sugars by individuals within populations should be
 ",<5%,5-10%,<10%,>10%,C,False
 "Rickets of prematurity is associated with:
-",Hypocalcaemic convulsions,Use of frusemide diuretic,Vitamin D deficiency in the mother,All of the options given are correct,D,True
+",Hypocalcaemic convulsions,Use of frusemide diuretic,Vitamin D deficiency in the mother,All of the options given are correct,D,False
 "Which of the following diseases does obesity increase the risk of developing?
 ",Type 2 diabetes,Cancer,Cardiovascular disease,All of the options given are correct,D,True
 "Which of the following statements about the protein:energy ratio of the requirement is correct?
@@ -477,7 +477,7 @@ Impaired foetal growth is described as intrauterine growth retardation (IUGR). I
 "Gluten
 ",May increase carbohydrate malabsorption,Is a constituent of avenin,Is the main protein in maize,May be contra-indicated in UC,A,True
 "Adaptive thermogenesis refers to:
-",A decrease in heat loss when exposed to cold,A decrease in non-shivering thermogenesis when exposed to cold,An increase in basal metabolic rate that is not fully explained by a change in body composition during chronic overfeeding,A decrease in spontaneous physical activity during chronic overfeeding.,C,True
+",A decrease in heat loss when exposed to cold,A decrease in non-shivering thermogenesis when exposed to cold,An increase in basal metabolic rate that is not fully explained by a change in body composition during chronic overfeeding,A decrease in spontaneous physical activity during chronic overfeeding.,C,False
 "Which of the following rules regarding the interconversion of fuels are central to the integration of metabolic pathways?
 ",Fatty acids can be made from and converted to carbohydrates and amino acids,Carbohydrates can be made from and converted to amino acids and fatty acids,Fatty acids can be made from but not converted to carbohydrates and amino acids,Amino acids can be made from and converted to fatty acids,C,False
 "Assessing growth in routine practice should be:
@@ -487,7 +487,7 @@ Impaired foetal growth is described as intrauterine growth retardation (IUGR). I
 "What is the primary lipoprotein secreted from the liver that is at least partially composed of dietary derived lipids?
 ",Chylomicrons,HDL,VLDL,LDL,C,True
 "Which of the following statements about the nutritional status of older people is correct?
-",The risk of high iron stores is greater than the risk of iron deficiency in older people.,All older people living in Western countries have low vitamin D status.,There is strong evidence that vitamin C supplements lower the risk of cancer in older people.,Low dietary intake of vitamin B12 is the main cause of vitamin B12 deficiency in older people.,A,True
+",The risk of high iron stores is greater than the risk of iron deficiency in older people.,All older people living in Western countries have low vitamin D status.,There is strong evidence that vitamin C supplements lower the risk of cancer in older people.,Low dietary intake of vitamin B12 is the main cause of vitamin B12 deficiency in older people.,A,False
 "Which of the following could lead to iodine deficiency?
 ",Low intake of fruits and vegetables,Intake only of locally grown food in central Africa,Insufficient caloric intake,Inadequate sunlight exposure,B,True
 "In relation to Eating Disorders, it is correct that:
@@ -513,7 +513,7 @@ Impaired foetal growth is described as intrauterine growth retardation (IUGR). I
 "Which statement about Engel's law on food economics is correct?
 ","As income rises, the proportion of income spent on food, declines","As income rises, the proportion of income spent on food, increases","As income rises, the proportion of income spent on food, remains similar","As income declines, the proportion of income spent on food, declines",A,True
 "The stomach lining contains several types of cells. Which statement about them is correct?
-",Mucous cells secrete the glycoprotein mucin,Chief cells the hormone gastrin (which stimulates acid secretion).,"Parietal cells secrete pepsinogen, the inactive precursor of pepsin",G Cells secrete hydrochloric acid,A,False
+",Mucous cells secrete the glycoprotein mucin,Chief cells the hormone gastrin (which stimulates acid secretion).,"Parietal cells secrete pepsinogen, the inactive precursor of pepsin",G Cells secrete hydrochloric acid,A,True
 "Which of these factors increases the risk for lung cancer?
 ",Saturated fat,Obesity,High dose ß-carotene supplements,Alcohol,C,True
 "According to the recommendations for the nutritional management of patients with diabetes, the consumption of saturated fat should be:
@@ -609,7 +609,7 @@ Impaired foetal growth is described as intrauterine growth retardation (IUGR). I
 "Which of the following statements about protein synthesis is correct?
 ",All the information in DNA codes for proteins,The mRNA formed by transcription of a region of DNA only contains information for the protein to be synthesised.,Both strands of DNA are transcribed to form mRNA.,The RNA formed by transcription of DNA undergoes splicing and further modifications to form mRNA.,D,True
 "Which of the following is closest to the amount of retinol formed from ß-carotene?
-",2 mol retinol /mol ß-carotene,1 mol retinol /mol ß-carotene,0.15 mol retinol /mol ß-carotene,0.1 mol retinol /mol ß-carotene,C,True
+",2 mol retinol /mol ß-carotene,1 mol retinol /mol ß-carotene,0.15 mol retinol /mol ß-carotene,0.1 mol retinol /mol ß-carotene,C,False
 "From the list of oral microorganisms, which is primarily responsible for the initiation of dental caries?
 ",Mutans streptococci,bifidobacteria,Lactobacilli,P. gingivalis,A,True
 "Which statement about the oral phase of digestion is INCORRECT?

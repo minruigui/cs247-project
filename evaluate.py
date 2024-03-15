@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from bitsandbytes.nn import Int8Params
 choices = ["A", "B", "C", "D"]
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from peft import prepare_model_for_kbit_training, LoraConfig, get_peft_model
 import torch
 
@@ -84,11 +84,11 @@ def load_quantized_model(model_name, quantization):
                 add_eos_token=True)
     elif quantization == "lora":
         tokenizer = AutoTokenizer.from_pretrained(
-            "siyuel01/lora",
+            model_name,
             model_max_length=512,
             padding_side="left",
             add_eos_token=True)
-        model = AutoModelForCausalLM.from_pretrained("siyuel01/lora", torch_dtype=torch.bfloat16).to(device)
+        model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.bfloat16).to(device)
 
     return model
 def eval(args,model, subject, dev_df, test_df):

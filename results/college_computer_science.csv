@@ -26,7 +26,7 @@ II. A doubly linked list
 III. An array",,III only,I and II only,"I, II, and III",D,True
 "If p(x) is the minimal-degree interpolating polynomial for the real-valued function f(x) at the n + 1 distinct real numbers x0, .... xn what is the maximum possible degree of p(x)?",n,n + 1,n + 2,2n,A,False
 "An internal hash table has 5 buckets, numbered 0, 1, 2, 3, 4. Keys are integers, and the hash function h(i) = i mod 5 is used, with linear resolution of collisions (i.e., if bucket h(i) is filled, the buckets h(i) + 1, h(i) + 2, ... are tried successively with all bucket numbers computed modulo 5). If elements with keys 13, 8, 24, 10, and 3 are inserted, m that order, into an initially blank hash table, then the content of the bucket numbered 2 is",3,8,10,13,A,False
-TCP protocol is responsible (among other things) for,Routing packets through the network,Reliable delivery of packets between directly connected machines,Reliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected,Dealing with differences among operating system architectures,C,True
+TCP protocol is responsible (among other things) for,Routing packets through the network,Reliable delivery of packets between directly connected machines,Reliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected,Dealing with differences among operating system architectures,C,False
 "Let A and B be two sets of words (strings) from Σ*, for some alphabet of symbols Σ. Suppose that B is a subset of A. Which of the following statements must always be true of A and B ?
 I. If A is finite, then B is finite.
 II. If A is regular, then B is regular.
@@ -69,12 +69,12 @@ IV. The height of the tree is logarithmic in the number of nodes.",I and III onl
 "Which of the following is (are) true about virtual memory systems that use pages?
 I. The virtual address space can be larger than the amount of physical memory.
 II. Programs must be resident in main memory throughout their execution.
-III. Pages correspond to semantic characteristics of the program.",I only,II only,I and II,I and III,A,False
+III. Pages correspond to semantic characteristics of the program.",I only,II only,I and II,I and III,A,True
 Which of the following is usually NOT represented in a subroutine's activation record frame for a stack-based programming language?,Values of local variables,A heap area,The return address,Stack pointer for the calling activation record,B,True
 Which of the following statements about a remote procedure call is true?,It is used to call procedures with addresses that are farther than 2^16 bytes away.,It cannot return a value.,It cannot pass parameters by reference.,It cannot call procedures implemented in a different language.,C,False
 "Of the following sorting algorithms, which has a running time that is LEAST dependent on the initial ordering of the input?",Insertion sort,Quicksort,Merge sort,Selection sort,C,True
 "A particular parallel program computation requires 100 seconds when executed on a single processor. If 40 percent of this computation is ""inherently sequential"" (i.e., will not benefit from additional processors), then the theoretically best possible elapsed times for this program running with 2 and 4 processors, respectively, are",20 and 10 seconds,30 and 15 seconds,50 and 25 seconds,70 and 55 seconds,D,False
-"Consider the representation of six-bit numbers by two's complement, one's complement, or by sign and magnitude. In which representation is there overflow from the addition of the integers 011000 and 011000?",Two's complement only,Sign and magnitude and one's complement only,Two's complement and one's complement only,All three representations,D,True
+"Consider the representation of six-bit numbers by two's complement, one's complement, or by sign and magnitude. In which representation is there overflow from the addition of the integers 011000 and 011000?",Two's complement only,Sign and magnitude and one's complement only,Two's complement and one's complement only,All three representations,D,False
 "Of the following, which best characterizes computers that use memory-mapped I/O?",The computer provides special instructions for manipulating I/O ports.,I/O ports are placed at addresses on the bus and are accessed just like other memory locations.,"To perform an I/O operation, it is sufficient to place the data in an address register and call the channel to perform the operation.",Ports are referenced only by memory-mapped instructions of the computer and are located at hardwired memory locations.,B,True
 Many cryptographic protocols base their security on assumptions about the computational difficulty of integer factorization. Integer factorization serves this purpose because we believe that,"integer multiplication is a function whose inverse, factorization, remains difficult for a large class of inputs",P = NP,"even if P = NP, integer factorization is still likely not to be polynomial-time computable",testing primality is computationally intractable,A,True
 Which of the following sets of bit strings CANNOT be described with a regular expression?,All bit strings whose number of zeros is a multiple of five,All bit strings starting with a zero and ending with a one,All bit strings with an even number of zeros,All bit strings with more ones than zeros,D,True
@@ -90,7 +90,7 @@ III. G has at least one vertex with degree 1.",I only,II only,III only,I and II,
 "In multiprogrammed systems it is advantageous if some programs such as editors and compilers can be shared by several users. Which of the following must be true of multiprogrammed systems in order that a single copy of a program can be shared by several users?
 I. The program is a macro.
 II. The program is recursive.
-III. The program is reentrant.",I only,II only,III only,II and III only,C,False
+III. The program is reentrant.",I only,II only,III only,II and III only,C,True
 Which of the following decimal numbers has an exact representation in binary notation?,0.1,0.2,0.3,0.5,D,True
 "Function signatures describe the types of the arguments to a function as well as the return value of the function. For instance, the addition function on reals has a signature of
 add : real x real -> real
@@ -122,7 +122,7 @@ C := A * E
 D := A/F
 E := B - C
 F := A + B
-with the same result as if the assignments were executed in the order shown?",1,2,3,4,C,True
+with the same result as if the assignments were executed in the order shown?",1,2,3,4,C,False
 "Two expressions E and F are said to be unifiable if there are substitutions for the variables of E and F that make the expressions lexically identical. In the following three expressions, only w, x, y, and z are variables.
 I. f(w,w)
 II. f(x,1)
@@ -146,7 +146,7 @@ Let T (n) be defined by T(1) = 7 and T(n + 1) = 3n + T(n) for all integers n ≥
 "Which of the following problems is (are) decidable?
 I. Given a (finite) string w, is w a prefix of the decimal expansion of π?
 II. Given a program and an input, is the program’s output the decimal expansion of π?
-III. Given a program that takes as input a prefix of the decimal expansion of π, is the program’s output always the same for every prefix?",I only,II only,III only,I and II only,A,False
+III. Given a program that takes as input a prefix of the decimal expansion of π, is the program’s output always the same for every prefix?",I only,II only,III only,I and II only,A,True
 "Which of the following statements about circuits is (are) true?
 I. Combinational circuits may have feedback; sequential circuits do not.
 II. Combinational circuits have a ""memoryless"" property; sequential circuits do not.
@@ -156,7 +156,7 @@ III. Both sequential and combinational circuits must be controlled by an externa
 "Which of the following considerations applies (apply) to choosing the page size in a paging system?
 I. An advantage of larger pages is that they lead to smaller page tables.
 II. An advantage of smaller pages is that they lead to less waste due to internal fragmentation.
-III. Normally, the dominant factor in disk access time is not dependent on page length, so longer pages can be used advantageously.",I only,II only,I and III only,"I, II, and III",D,True
+III. Normally, the dominant factor in disk access time is not dependent on page length, so longer pages can be used advantageously.",I only,II only,I and III only,"I, II, and III",D,False
 "Two processors, M-5 and M-7, implement the same instruction set. Processor M-5 uses a 5-stage pipeline and a clock cycle of 10 nanoseconds. Processor M-7 uses a 7-stage pipeline and a clock cycle of 7.5 nanoseconds. Which of the following is (are) true?
 I. M-7’s pipeline has better maximum throughput than M-5’s pipeline.
 II. The latency of a single instruction is shorter on M-7’s pipeline than on M-5’s pipeline.
@@ -170,11 +170,11 @@ Which of the following statements is (are) true?
 I. The grammar is ambiguous.
 II. The grammar is suitable for top-down parsing.
 III. The grammar is suitable for bottom-up parsing.",I only,II only,III only,II and III only,D,True
-Hash tables can contribute to an efficient average-case solution for all of the problems described below EXCEPT:,"Counting distinct values: Given a set of n keys, determine the number of distinct key values.","Dynamic dictionary: Support the operations of insert, delete, and search in a dictionary.","Range search: Given values a and b, find all the records whose key value is in the range a, b.","Symbol table lookup: Given a program identifier, find its type and address.",C,True
+Hash tables can contribute to an efficient average-case solution for all of the problems described below EXCEPT:,"Counting distinct values: Given a set of n keys, determine the number of distinct key values.","Dynamic dictionary: Support the operations of insert, delete, and search in a dictionary.","Range search: Given values a and b, find all the records whose key value is in the range a, b.","Symbol table lookup: Given a program identifier, find its type and address.",C,False
 "Let A be a finite set with m elements, and let B be a finite set with n elements. The number of distinct functions mapping A into B is",n^m,n!/(n - m)!,n!,n!/(m!(n - m)!),A,False
 "To compute the matrix product M_1M_2, where M_1 has p rows and q columns and where M_2 has q rows and r columns, takes time proportional to pqr, and the result is a matrix of p rows and r columns. Consider the product of three matrices N_1N_2N_3 that have, respectively, w rows and x columns, x rows and y columns, and y rows and z columns. Under what condition will it take less time to compute the product as (N_1N_2)N_3 (i.e., multiply the first two matrices first) than to compute it as N_1(N_2 N_3)?","There is no such condition; i.e., they will always take the same time.",1/x + 1/z < 1/w + 1/y,x > y,1/w + 1/x < 1/y + 1/z,B,False
 "The hit ratio of a cache memory is the percentage of accesses (reads and writes) for which data are found in the cache. Write-through is a policy whereby every write operation updates main memory. Write-back is a policy whereby a write operation to a line found in the cache does not affect main memory until the line is evicted from the cache. Write-allocation is a policy whereby a cache line is allocated and loaded on a write-miss. If it is assumed that write-allocation is always used, which of the following is true?",Write-back usually results in a better hit ratio than write-through.,Write-through usually results in a better hit ratio than write-back.,The percentage of write operations resulting in a main memory operation will never be larger for write-back than for write-through.,The percentage of write operations resulting in a main memory operation will never be larger for writethrough than for write-back.,C,False
-"A particular disk unit uses a bit string to record the occupancy or vacancy of its tracks, with O denoting vacant and 1 denoting occupied. A 32-bit segment of this string has the hexadecimal value D4FE2003. The percentage of occupied tracks for the corresponding part of the disk, to the nearest percent, is",12%,25%,38%,44%,D,False
+"A particular disk unit uses a bit string to record the occupancy or vacancy of its tracks, with O denoting vacant and 1 denoting occupied. A 32-bit segment of this string has the hexadecimal value D4FE2003. The percentage of occupied tracks for the corresponding part of the disk, to the nearest percent, is",12%,25%,38%,44%,D,True
 "An Euler circuit of an undirected graph is a circuit in which each edge of the graph appears exactly once. Which of the following undirected graphs must have an Euler circuit?
 I. A complete graph with 12 vertices
 II. A complete graph with 13 vertices
@@ -184,7 +184,7 @@ Which of the following characteristics of a programming language is best specifi
 I. Datagrams at the source must be the size of the smallest maximum transmission unit (MTU) of all the links on a path to the destination.
 II. Datagrams may be fragmented during routing.
 III. Datagrams are reassembled only at the destination.",I only,II only,III only,II and III,D,True
-A starvation-free job-scheduling policy guarantees that no job waits indefinitely for service. Which of the following job-scheduling policies is starvation-free?,Round-robin,Priority queuing,Shortest job first,Youngest job first,A,False
+A starvation-free job-scheduling policy guarantees that no job waits indefinitely for service. Which of the following job-scheduling policies is starvation-free?,Round-robin,Priority queuing,Shortest job first,Youngest job first,A,True
 "Of the following, which gives the best upper bound for the value of f(N) where f is a solution to the recurrence f(2N + 1) = f(2N) = f(N) + log N for N >= 1, with f(1) = 0?",O(log N),O(N log N),O(log N) + 0(1),O((log N)^2),D,False
 "Company X shipped 5 computer chips, 1 of which was defective, and Company Y shipped 4 computer chips, 2 of which were defective. One computer chip is to be chosen uniformly at random from the 9 chips shipped by the companies. If the chosen chip is found to be defective, what is the probability that the chip came from Company Y?",2 / 9,4 / 9,1 / 2,2 / 3,D,True
 "Which of the following problems can be solved by a standard greedy algorithm?
@@ -210,7 +210,7 @@ A major advantage of direct mapping of a cache is its simplicity. The main disad
 I. The computation C lasts for at least n steps.
 II. The computation C lasts for at least n steps, and M prints a 1 at some point after the nth step.
 III. M scans at least n distinct tape squares during the computation C.",,III only,I and II only,I and III only,D,True
-"A 3-way, set-associative cache is",one in which each main memory word can be stored at any of 3 cache locations,effective only if 3 or fewer processes are running alternately on the processor,possible only with write-back,faster to access than a direct-mapped cache,A,False
+"A 3-way, set-associative cache is",one in which each main memory word can be stored at any of 3 cache locations,effective only if 3 or fewer processes are running alternately on the processor,possible only with write-back,faster to access than a direct-mapped cache,A,True
 "Consider an object-oriented language in which all entities are objects. Two relationships arise: (1) the instance relationship, between an object and the class of which that object is a member, and (2) the subclass relationship, between a class and the superclass from which that class inherits properties. In such a language, when a message is sent to an object requesting execution of one of its methods (procedures), the method is located by following",one instance link and then zero or more subclass links,one or more instance links and then one or more subclass links,one or more instance links,one subclass link and then one or more instance links,A,False
 "In a pipelined RISC computer where all arithmetic instructions have the same CPI (cycles per instruction), which of the following actions would improve the execution time of a typical program?
 I. Increasing the clock cycle rate
