@@ -9,6 +9,7 @@ from peft import prepare_model_for_kbit_training, LoraConfig, get_peft_model
 import torch
 
 
+
 # prompt = "My favourite condiment is"
 
 # model_inputs = tokenizer([prompt], return_tensors="pt").to("cuda")
@@ -49,48 +50,10 @@ def gen_prompt(train_df, subject, k=-1):
     for i in range(k):
         prompt += format_example(train_df, i)
     return prompt
-
-def gen_training_prompt(dataset, subject, k=-1):
-    df = pandas.DataFrame(dataset)
-    prompt = "The following are multiple choice questions (with answers) about {}.\n\n".format(format_subject(subject))
-    if k == -1:
-        k = df.shape[0]
-    for i in range(k):
-        prompt += format_example(df, i)
-    return prompt
-    
 BACH_SIZE = 1
 tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-v0.1", special_tokens_map={})
-
-def load_quantized_model(model_name, quantization):
-    if quantization == "none":
-        model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
-    elif quantization == "8bit":
-        model = AutoModelForCausalLM.from_pretrained(model_name, load_in_8bit=True, device_map="auto")
-    elif quantization == "4bit":
-        model = AutoModelForCausalLM.from_pretrained(model_name, load_in_4bit=True, device_map="auto")
-        os.environ["BNB_4BIT_COMPUTE_DTYPE"] = "float16"
-    elif quantization == "qlora":
-        bnb_config = BitsAndBytesConfig(
-        load_in_4bit=True,
-        bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=torch.bfloat16,
-        bnb_4bit_use_double_quant=True
-        )
-        model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=bnb_config, device_map="auto")
-        tokenizer = AutoTokenizer.from_pretrained(
-                model_name,
-                model_max_length=512,
-                padding_side="left",
-                add_eos_token=True)
-    elif quantization == "lora":
-        tokenizer = AutoTokenizer.from_pretrained(
-            "siyuel01/lora",
-            model_max_length=512,
-            padding_side="left",
-            add_eos_token=True)
-        model = AutoModelForCausalLM.from_pretrained("siyuel01/lora", torch_dtype=torch.bfloat16).to(device)
-
+def load_quantized_model(model):
+    
     return model
 def eval(args,model, subject, dev_df, test_df):
     
@@ -119,7 +82,6 @@ def eval(args,model, subject, dev_df, test_df):
         label = test_df.iloc[i, test_df.shape[1]-1]
         prompts.append(prompt)
         labels.append(label)
-
         if len(prompts) == BACH_SIZE:
             model_inputs = tokenizer(prompts, return_tensors="pt").to("cuda")
             generated_ids = model.generate(**model_inputs, max_new_tokens=1, do_sample=False, pad_token_id=tokenizer.eos_token_id)
@@ -128,14 +90,13 @@ def eval(args,model, subject, dev_df, test_df):
                 cors.append(c==l)
             prompts=[]
             labels=[]
-        
     if len(prompts)>0:
         model_inputs = tokenizer(prompts, return_tensors="pt").to("cuda")
         generated_ids = model.generate(**model_inputs, max_new_tokens=1, do_sample=False, pad_token_id=tokenizer.eos_token_id)
         cs=tokenizer.batch_decode(generated_ids[:,-1])
         for c,l in zip(cs,labels):
             cors.append(c==l)
-    
+
     acc = np.mean(cors)
     cors = np.array(cors)
 
@@ -143,8 +104,7 @@ def eval(args,model, subject, dev_df, test_df):
 
     return cors, acc, "Average accuracy {:.3f} - {}\n".format(acc, subject)
 
-def main(args):
-    print(os.listdir(os.path.join(args.data_dir, "test")))
+def main(args, pass_model=None):
     subjects = sorted([f.split("_test.csv")[0] for f in os.listdir(os.path.join(args.data_dir, "test")) if "_test.csv" in f])
     if not os.path.exists(args.save_dir):
         os.mkdir(args.save_dir)
@@ -152,10 +112,18 @@ def main(args):
     print(args)
     all_cors = []
     tmp_string = ""
-    model = load_quantized_model(args.model, args.quantization)
-    for subject in subjects:
+    if pass_model:
+        model = pass_model
+        
+    for subject in subjects[:21]:
+        print(subject)
+#         if os.path.exists(os.path.join(args.save_dir, "{}.csv".format(subject))):
+#             print("skip")
+#             continue
+
         dev_df = pd.read_csv(os.path.join(args.data_dir, "dev", subject + "_dev.csv"), header=None)[:args.ntrain]
         test_df = pd.read_csv(os.path.join(args.data_dir, "test", subject + "_test.csv"), header=None)
+
 
         cors, acc, msg = eval(args,model, subject, dev_df, test_df)
 
@@ -179,11 +147,11 @@ def get_parser():
     parser.add_argument("--data_dir", "-d", type=str, default="data")
     parser.add_argument("--save_dir", "-s", type=str, default="results")
     parser.add_argument("--model", "-m", type=str, default="mistralai/Mistral-7B-v0.1")
-    parser.add_argument("--quantization", "-q", type=str, default="none", choices=["none", "8bit", "4bit", "lora", "qlora"], help="Quantization type")
+    parser.add_argument("--quantization", "-q", type=str, default="none", choices=["none", "8bit", "4bit", "lora"], help="Quantization type")
     
     return parser
 
-if __name__ == "__main__":
-    parser = get_parser()
-    args = parser.parse_args()
-    main(args)
+# if __name__ == "__main__":
+#     parser = get_parser()
+#     args = parser.parse_args()
+#     main(args)
